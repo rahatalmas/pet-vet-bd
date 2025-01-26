@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import {BrowserRouter, Routes, Route, NavLink} from 'react-router';
+import {BrowserRouter, Routes, Route, NavLink, Link} from 'react-router';
 
 import './index.css';
 import App from './pages/App';
@@ -55,6 +55,49 @@ function Navigation() {
          <Route path="foodshops" element={<Chat />} />
          <Route path="login" element={<Login />} />
        </Routes>
+       <footer className='footer'>
+          <div className='f-section-col'>
+             <div className="logo-and-dom">
+               <img className="logo" src="./assets/logo.jpg" alt="Logo" />
+               <h3 className="domain">Pet Vet BD</h3>
+             </div>
+             <div className='app-summary'>
+               <p>
+               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+               </p>
+             </div>
+             <div className='f-contacts'>
+                <p><i className="fa fa-phone"></i>
+                01733783039</p>
+                <p><i className="fa fa-envelope"></i> 
+                 rahatalmas55@gmail.com</p>
+             </div>
+          </div>
+          <div className='f-section-col'>
+             <div className='f-navs'>
+              <NavLink className="f-nav-item" to="/">
+              <i className="fa fa-home"></i>
+              Home
+              </NavLink>
+              <NavLink className="f-nav-item" to="/doctors">
+              <i className="fa fa-user-md"></i>
+              Doctors
+              </NavLink>
+              <NavLink className="f-nav-item" to="/foodshops">
+              <i className="fa fa-utensils"></i>
+              Food Shop
+              </NavLink>
+              <NavLink className="f-nav-item" to="/testui">
+              <i className="fa fa-pills"></i>
+              Medicine
+              </NavLink>
+             </div>
+          </div>
+          <div className='f-section-col'>
+              col-3
+          </div>
+       </footer>
+       <div className='end'>&copy; codecafe.io</div>
      </BrowserRouter>
    );
  }

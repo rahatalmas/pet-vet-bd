@@ -154,3 +154,54 @@ body {
 /*-----------------------------------------------------*/
 
 
+.footer{
+    padding: 20px;
+    background-color:navy;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: justify;
+}
+.f-section-col{
+    flex: 1;
+}
+.footer h3{
+    color: white;
+    margin:8px 0px;
+}
+.footer img{
+    border-radius: 100%;
+}
+.footer p{
+    margin: 8px 0px;
+    color: white;
+}
+
+.f-navs{
+    display: flex;
+    flex-direction: column;
+}
+.f-nav-item{
+    color: white;
+    padding: 4px 0px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.f-nav-item:hover{
+    color: whitesmoke;
+}
+.end{
+    text-align: center;
+    background-color: rgb(5, 0, 15);
+    color: white;
+    padding:5px;
+}
+
+i{
+    margin-right: 8px;
+    text-align: center;
+    width: 20px;
+}
+
