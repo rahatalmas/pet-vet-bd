@@ -36,7 +36,7 @@ function Navigation() {
                Doctors
              </NavLink>
              <NavLink className="nav-bar-item" to="/foodshops" onClick={toggleNav}>
-               Food Shop
+               message testing
              </NavLink>
              <NavLink className="nav-bar-item" to="/testui" onClick={toggleNav}>
                Test UI
@@ -85,7 +85,7 @@ function Navigation() {
               </NavLink>
               <NavLink className="f-nav-item" to="/foodshops">
               <i className="fa fa-utensils"></i>
-              Food Shop
+              message testing
               </NavLink>
               <NavLink className="f-nav-item" to="/testui">
               <i className="fa fa-pills"></i>

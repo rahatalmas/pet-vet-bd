@@ -26,8 +26,19 @@ function DoctorsPage() {
 
   return (
     <div className="doctor-page">
-      <div className="banner-wrapper"></div>
-      
+      <div className="banner-wrapper">
+        <div className="banner-content">
+          <div className="text-left">
+            <h1>Your Header Here</h1>
+            <p>Some descriptive text goes here. It can span multiple lines to describe your product or service.</p>
+            <button className="cta-button">Click Me</button>
+          </div>
+          <div className="image-right">
+            <img src="./assets/vet.jpg" alt="Banner Image" />
+          </div>
+        </div>
+      </div>
+
       <div className='menu-wrapper'>
            <h1 className='menu-name'>Doctor List</h1>
            <h1 className='menu-btn'>View All~</h1>

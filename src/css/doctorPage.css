@@ -5,11 +5,6 @@
     text-align: center;
   }
   
-  .banner-wrapper {
-    height: 35vh;
-    background-color: rgb(226, 226, 226);
-  }
-  
   .doctor-slider-wrapper {
     position: relative;
     overflow: hidden;
@@ -136,3 +131,112 @@
   .menu-btn:hover{
     color: green;
   }
+
+
+
+
+  /*banner....*/
+  /* Reset some default styles */
+/* Reset some default styles */
+
+/* Banner Wrapper */
+.banner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Content Wrapper */
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; /* Make it responsive */
+  gap: 20px;
+}
+
+/* Left Text Section */
+.text-left {
+  flex: 2
+}
+
+.text-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.text-left p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  padding: 0px 50px;
+}
+
+/* Button with Gradient Border */
+.cta-button {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  /* background: linear-gradient(45deg, #ff6a00, #ffcc00, #ff6a00); */
+}
+
+.cta-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff6a00, #ffcc00, #ff6a00);
+  background-size: 200% 200%;
+  animation: gradient 1.5s ease infinite;
+  z-index: -1;
+}
+
+.cta-button:hover {
+  color: #fff;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+/* Image Section */
+.image-right {
+  flex: 1;
+}
+
+.image-right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .banner-content {
+    flex-direction: column-reverse; /* Reverse the direction on mobile */
+  }
+
+  .text-left,
+  .image-right {
+    max-width: 100%; /* Full width for each section */
+  }
+}
+
+
+

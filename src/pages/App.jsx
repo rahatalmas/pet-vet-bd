@@ -13,6 +13,7 @@ function App() {
               <h1 className='banner-title'>What is Lorem Ipsum</h1>
               <p className='banner-para'>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
               <button className='banner-btn'>Download App</button>
+            
             </div>
             <div className='banner-img'>
                <img className='banner-img-file' src="/assets/vethospital.png"/>
