@@ -1,0 +1,138 @@
+.doctor-page {
+    padding-top: 50px;
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .banner-wrapper {
+    height: 35vh;
+    background-color: rgb(226, 226, 226);
+  }
+  
+  .doctor-slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+  
+  .doctor-list-container {
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+  }
+  
+  .doctor-card {
+    flex: 0 0 auto;
+    width: 450px;
+    height: 200px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 5px;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+  
+  .card-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .card-image-sec {
+    flex: 1.5;
+    height: 176px;
+    margin: 12px 12px;
+    background-color: lightgray;
+    border-radius: 8px;
+  }
+  
+  .card-info-sec {
+    flex: 2;
+    text-align: left;
+  }
+  
+  .card-info-sec h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .card-info-sec p {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .slider-btn.left {
+    left: 10px;
+  }
+  
+  .slider-btn.right {
+    right: 10px;
+  }
+  
+  .slider-dots {
+    margin-top: 20px;
+  }
+  
+  .slider-dots .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider-dots .dot:hover {
+    background-color: black;
+  }
+  
+  .menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .menu-name{
+    font-size: x-large;
+    color: navy;
+  }
+  .menu-btn{
+    font-size: large;
+    color: rgb(55, 55, 63);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .menu-btn:hover{
+    color: green;
+  }
