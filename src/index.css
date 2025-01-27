@@ -147,6 +147,13 @@ body {
         font-size: 24px;
         cursor: pointer;
       }
+      .footer{
+        flex-direction: column;
+      }
+      .f-section-col{
+        width: 100%;
+      }
+      
   }
 
 /*-----------------------------------------------------*/

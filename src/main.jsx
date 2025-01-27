@@ -98,7 +98,7 @@ function Navigation() {
              </div>
           </div>
           <div className='f-section-col'>
-              col-3
+              app links
           </div>
        </footer>
        <div className='end'>&copy; codecafe.io</div>
