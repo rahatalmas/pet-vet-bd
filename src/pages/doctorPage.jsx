@@ -4,12 +4,12 @@ import { useState, useRef } from 'react';
 function DoctorsPage() {
   const sliderRef = useRef(null);
   const doctors = [
-    { name: "Dr. John Doe", specialization: "Cardiologist" },
-    { name: "Dr. Jane Smith", specialization: "Dermatologist" },
-    { name: "Dr. Alex Brown", specialization: "Neurologist" },
-    { name: "Dr. Emily White", specialization: "Pediatrician" },
-    { name: "Dr. Michael Green", specialization: "Orthopedic" },
-    { name: "Dr. Sarah Black", specialization: "Oncologist" },
+    { name: "Dr. Uzumaki Naruto", specialization: "Cardiologist",picture:"./assets/naruto1.jpg" },
+    { name: "Dr. Itachi Uchiha", specialization: "Dermatologist",picture:"./assets/itachi.jpg" },
+    { name: "Dr. Sakura Haruno", specialization: "Neurologist",picture:"./assets/sakura1.jpg" },
+    { name: "Dr. Goku", specialization: "Pediatrician",picture:"./assets/goku.jpg" },
+    { name: "Dr. Uchiha Madara", specialization: "Orthopedic",picture:"./assets/madara.jpg" },
+    { name: "Dr. Uchiha Sarada", specialization: "Oncologist",picture:"./assets/naruto1.jpg" },
   ];
 
   const handlePrev = () => {
@@ -29,7 +29,7 @@ function DoctorsPage() {
       <div className="banner-wrapper">
         <div className="banner-content">
           <div className="text-left">
-            <h1>Your Header Here</h1>
+            <h1>Find Best Pet Doctors</h1>
             <p>Some descriptive text goes here. It can span multiple lines to describe your product or service.</p>
             <button className="cta-button">Click Me</button>
           </div>
@@ -40,8 +40,13 @@ function DoctorsPage() {
       </div>
 
       <div className='menu-wrapper'>
-           <h1 className='menu-name'>Doctor List</h1>
-           <h1 className='menu-btn'>View All~</h1>
+           <h1 className='menu-name'><i className="fa fa-list"></i>
+           Doctor List</h1>
+           <h1 className='menu-btn'>
+            View All
+           <i className="fa fa-arrow-right"></i>
+
+           </h1>
         </div>
 
       <div className="doctor-slider-wrapper">
@@ -50,7 +55,9 @@ function DoctorsPage() {
           {doctors.map((doctor, index) => (
             <div key={index} className="doctor-card">
               <div className="card-content">
-                <div className="card-image-sec"></div>
+                <div className="card-image-sec">
+                  <img src={doctor.picture} style={{height:'176px',width:"100%",objectFit:"cover",borderRadius:"4px"}}/>
+                </div>
                 <div className="card-info-sec">
                   <h3>{doctor.name}</h3>
                   <p>{doctor.specialization}</p>
@@ -66,8 +73,7 @@ function DoctorsPage() {
           <span key={index} className="dot"></span>
         ))}
       </div> */}
-      <div>
-        Hello world
+      <div className='something'>
       </div>
     </div>
   );

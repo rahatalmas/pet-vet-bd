@@ -1,5 +1,4 @@
 .doctor-page {
-    padding-top: 50px;
     max-width: 1400px;
     margin: auto;
     text-align: center;
@@ -11,6 +10,7 @@
     max-width: 100%;
     margin: 0px auto;
     padding: 0px 10px;
+    margin-bottom: 20px;
   }
   
   .doctor-list-container {
@@ -137,15 +137,39 @@
 
   /*banner....*/
   /* Reset some default styles */
-/* Reset some default styles */
 
 /* Banner Wrapper */
+/* Define the keyframes for the gradient animation */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Banner Wrapper with animated gradient border */
 .banner-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  position: relative; /* Needed for pseudo-element positioning */
 }
+
+.banner-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px; /* Thickness of the border */
+  background: linear-gradient(90deg, navy,gold, purple); /* Gradient */
+  background-size: 200%; /* Ensures smooth animation */
+  animation: gradient-animation 3s infinite linear; /* Animate the gradient */
+}
+
 
 /* Content Wrapper */
 .banner-content {
@@ -153,7 +177,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  flex-wrap: wrap; /* Make it responsive */
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -165,6 +189,7 @@
 .text-left h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color:purple;;
 }
 
 .text-left p {
@@ -176,7 +201,7 @@
 /* Button with Gradient Border */
 .cta-button {
   background-color: transparent;
-  color: #333;
+  color: #000000;
   border: 2px solid transparent;
   border-radius: 5px;
   padding: 10px 20px;
@@ -227,16 +252,27 @@
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  .doctor-page {
+    padding-top: 55px;
+  }
+  
   .banner-content {
     flex-direction: column-reverse; /* Reverse the direction on mobile */
   }
-
+  
   .text-left,
   .image-right {
-    max-width: 100%; /* Full width for each section */
+    max-width: 100%;
+  }
+  .image-right img{
+    width: 50%;
   }
 }
 
 
 
+.something{
+  height: 25vh;
+  background-color:rgb(245, 240, 242);
+}

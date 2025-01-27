@@ -29,17 +29,21 @@ function Navigation() {
              </div>
            </div>
            <div className={isNavOpen ?'nav-items':'off-nav-bar-items'}>
-             <NavLink className="nav-bar-item" to="/" onClick={toggleNav}>
+             <NavLink className="nav-bar-item" to="/" onClick={isNavOpen?toggleNav:()=>{}}>
+             <i className="fa fa-home"></i>
                Home
              </NavLink>
-             <NavLink className="nav-bar-item" to="/doctors" onClick={toggleNav}>
+             <NavLink className="nav-bar-item" to="/doctors" onClick={isNavOpen?toggleNav:()=>{}}>
+             <i className="fa fa-user-md"></i>
                Doctors
              </NavLink>
-             <NavLink className="nav-bar-item" to="/foodshops" onClick={toggleNav}>
+             <NavLink className="nav-bar-item" to="/foodshops" onClick={isNavOpen?toggleNav:()=>{}}>
+             <i className="fa fa-pills"></i>
                message testing
              </NavLink>
-             <NavLink className="nav-bar-item" to="/testui" onClick={toggleNav}>
-               Test UI
+             <NavLink className="nav-bar-item" to="/testui" onClick={isNavOpen?toggleNav:()=>{}}>
+             <i className="fa fa-utensils"></i>
+              Pet Foods
              </NavLink>
            </div>
            <div className="profile-nav">

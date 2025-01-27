@@ -1,6 +1,7 @@
 .login-page{
    height: 100vh;   
    display: flex;
+   padding-top: 50px;
 }
 .login-page-logo-wrapper{
    text-align: center;
