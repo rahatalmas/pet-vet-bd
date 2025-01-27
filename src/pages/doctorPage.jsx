@@ -1,3 +1,4 @@
+import LinkedHeader from '../components/headers/linkedHeader';
 import '../css/doctorPage.css';
 import { useState, useRef } from 'react';
 
@@ -39,15 +40,12 @@ function DoctorsPage() {
         </div>
       </div>
 
-      <div className='menu-wrapper'>
-           <h1 className='menu-name'><i className="fa fa-list"></i>
-           Doctor List</h1>
-           <h1 className='menu-btn'>
-            View All
-           <i className="fa fa-arrow-right"></i>
-
-           </h1>
-        </div>
+      <LinkedHeader
+        name="Doctor List"
+        linkName="ViewAll"
+        icon1="fa fa-list"
+        icon2="fa fa-arrow-right"
+      />
 
       <div className="doctor-slider-wrapper">
         <button className="slider-btn left" onClick={handlePrev}>❮</button>
@@ -73,6 +71,12 @@ function DoctorsPage() {
           <span key={index} className="dot"></span>
         ))}
       </div> */}
+      <LinkedHeader
+        name="Common Problems"
+        link="ViewAll"
+        icon1="fa fa-list"
+        icon2="fa fa-arrow-right"
+      />
       <div className='something'>
       </div>
     </div>

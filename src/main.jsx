@@ -7,6 +7,7 @@ import App from './pages/App';
 import DoctorsPage from './pages/doctorPage';
 import Chat from './pages/chat';
 import Login from './pages/login';
+import DoctorList from './pages/doctor/doctorList';
 
 function Navigation() {
    const [isNavOpen, setIsNavOpen] = useState(false);
@@ -56,9 +57,12 @@ function Navigation() {
        <Routes>
          <Route index element={<App />} />
          <Route path="doctors" element={<DoctorsPage />} />
+         <Route path="doctors/list" element={<DoctorList/>}/>
          <Route path="foodshops" element={<Chat />} />
          <Route path="login" element={<Login />} />
        </Routes>
+       <div className='footer-container'>
+
        <footer className='footer'>
           <div className='f-section-col'>
              <div className="logo-and-dom">
@@ -101,6 +105,8 @@ function Navigation() {
               app links
           </div>
        </footer>
+
+       </div>
        <div className='end'>&copy; codecafe.io</div>
      </BrowserRouter>
    );

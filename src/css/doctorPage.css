@@ -4,18 +4,19 @@
     text-align: center;
   }
   
+
+  /* silder ..... */
   .doctor-slider-wrapper {
     position: relative;
     overflow: hidden;
     max-width: 100%;
     margin: 0px auto;
     padding: 0px 10px;
-    margin-bottom: 20px;
   }
   
   .doctor-list-container {
     display: flex;
-    gap: 16px;
+    gap: 8px;
     overflow: hidden;
     scroll-behavior: smooth;
     padding: 10px 0;
@@ -47,7 +48,7 @@
   .card-image-sec {
     flex: 1.5;
     height: 176px;
-    margin: 12px 12px;
+    margin: 12px;
     background-color: lightgray;
     border-radius: 8px;
   }
@@ -66,7 +67,7 @@
     font-size: 14px;
     color: gray;
   }
-  
+
   .slider-btn {
     position: absolute;
     top: 50%;
@@ -111,32 +112,6 @@
     background-color: black;
   }
   
-  .menu-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin-top: 10px;
-  }
-  .menu-name{
-    font-size: x-large;
-    color: navy;
-  }
-  .menu-btn{
-    font-size: large;
-    color: rgb(55, 55, 63);
-    cursor: pointer;
-    text-decoration: underline;
-  }
-  .menu-btn:hover{
-    color: green;
-  }
-
-
-
-
-  /*banner....*/
-  /* Reset some default styles */
 
 /* Banner Wrapper */
 /* Define the keyframes for the gradient animation */

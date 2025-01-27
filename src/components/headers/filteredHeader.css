@@ -1,0 +1,17 @@
+.menu-filter-con{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.menu-filter{
+    min-width: 150px;
+    cursor: pointer;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.menu-filter-con i{
+    margin-left: 4px;
+    font-size: 20px;
+}

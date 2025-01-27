@@ -1,0 +1,19 @@
+.menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 10px;
+  }
+  .menu-name{
+    font-size: x-large;
+    color: navy;
+  }
+  .menu-btn{
+    font-size: large;
+    color: rgb(55, 55, 63);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .menu-btn:hover{
+    color: green;
+  }
